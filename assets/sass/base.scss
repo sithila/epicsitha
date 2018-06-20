@@ -1,0 +1,93 @@
+@import "reset";
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  @media (max-width: 800px) {
+    overflow: visible !important;
+  } 
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    height: 100%;
+    color: $font-color1;
+    @media (max-width: 800px) {
+        overflow: visible !important;
+      } 
+}
+
+h1,h2,h3,h4{
+    margin: 0px;
+    padding: 0px;
+    font-weight: 300;
+}
+p{
+    margin-bottom: 10px;
+    
+}
+h1{
+    font-family: 'Bitter', serif;
+}
+
+h2{
+    font-size: 1.5em;
+}
+h2{
+    font-size: 1.2em;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo, .logo-link, .icon, .helper{
+    background: url(/assets/images/main-sprite.png) no-repeat;
+}
+
+.full-width{
+    width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+.center{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[type="text"]::-webkit-input-placeholder, input[type="text"]:-moz-placeholder {
+  font-weight: normal;
+}
+
+.upercase{
+    text-transform: uppercase;
+}
+
+.hz-list{
+    list-style: none;
+    li{
+        display: inline-block;
+    }
+}
+.v-list{
+    list-style: none;
+    li{
+        display: block;
+    }
+}
+.responsive-img{
+    max-width: 100%;
+}
+
+
+
